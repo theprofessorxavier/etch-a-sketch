@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.square{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
