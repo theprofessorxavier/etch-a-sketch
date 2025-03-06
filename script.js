@@ -30,11 +30,13 @@ function createCanvas(row, column, newContainer){
 
     // adjust square height and hover effect
     const squares = document.querySelectorAll(".square");
+    const colors = ["blue", "red", "green", "yellow"];
     squares.forEach((square)=>{
         square.style.cssText = `height: ${squareHeight}px;
                                 width: ${squareWidth}px;`;
         square.addEventListener("mouseover",()=>{
-            square.style.backgroundColor = "red";
+            let chooseColor = Math.floor(Math.random() * 4);
+            square.style.backgroundColor = `${colors[chooseColor]}`;
         });
     });
 }
